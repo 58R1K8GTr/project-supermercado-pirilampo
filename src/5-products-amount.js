@@ -3,7 +3,7 @@ const stockProducts = require('./data.json');
 const getProductsAmount = () => {
   // Desenvolva seu código dentro dessa função...
   let quantity = 0;
-  for (let indexProduct = 0; indexProduct < stockProducts.length; indexProduct++) {
+  for (let indexProduct = 0; indexProduct < stockProducts.length; indexProduct += 1) {
     const product = stockProducts[indexProduct];
     quantity += product.quantityInStock;
   }

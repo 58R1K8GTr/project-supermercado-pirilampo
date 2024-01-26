@@ -3,11 +3,14 @@ const stockProducts = require('./data.json');
 const searchProductsByBrand = (brand) => {
   // Desenvolva seu código dentro dessa função...
   let filterProducts = [];
-  for (let indexProducts = 0; indexProducts < stockProducts.length; indexProducts++) {
+  for (let indexProducts = 0; indexProducts < stockProducts.length; indexProducts += 1) {
     const product = stockProducts[indexProducts];
     if (product.brand === brand) {
       filterProducts.push(
-        { description: product.description, formattedPrice: `R$ ${product.price}`}
+        {
+          description: product.description,
+          formattedPrice: `R$ ${product.price}`,
+        },
       );
     }
   }
