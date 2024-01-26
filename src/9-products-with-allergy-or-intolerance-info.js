@@ -12,7 +12,7 @@ const getProductsWithAllergyOrIntoleranceInfo = () => {
           formattedPrice: `R$ ${product.price}`,
           allergyOrIntoleranceMessage: `Pode conter: ${product.allergyOrIntolerance.join(' ')}`
         }
-      )
+      );
     }
   }
   return products;
